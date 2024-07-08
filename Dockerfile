@@ -24,7 +24,7 @@ WORKDIR /bombsquad
 RUN pip3 install -r requirements.txt
 
 # Expose BombSquad server port
-EXPOSE $BS_GAME_PORT
+EXPOSE 43210
 
 # Start BombSquad server
-CMD ["./bombsquad_server", "--game-port", "$BS_GAME_PORT", "--admin-pass", "$BS_ADMIN_PASS"]
+CMD ["./bombsquad_server", "--game-port", "43210", "--admin-pass", "$BS_ADMIN_PASS"]
